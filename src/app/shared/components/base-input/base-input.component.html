@@ -1,0 +1,13 @@
+<div [formGroup]="form">
+  <div class="form-floating">
+    <input
+      [type]="inputType"
+      class="form-control"
+      [id]="labelId"
+      [placeholder]="inputPlaceholder"
+      [formControlName]="controlName"
+    />
+    <label [for]="labelId">{{ labelText }}</label>
+    <input-errors [fieldName]="controlName"></input-errors>
+  </div>
+</div>
